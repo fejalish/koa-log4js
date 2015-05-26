@@ -26,7 +26,7 @@ module.exports = function(opts){
                     category: loggerName
                 }
             ],
-            replaceConsole: true
+            replaceConsole: opts.replaceConsole || true
         });
         logger = log4js.getLogger(loggerName);
     }
